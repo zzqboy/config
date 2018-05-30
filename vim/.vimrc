@@ -46,4 +46,7 @@ let g:miniBufExplMaxSize = 2
 " nerdtree
 map <C-n> :NERDTree<CR>
 
-
+" molokai
+colorscheme molokai
+set t_Co=256
+set background=dark

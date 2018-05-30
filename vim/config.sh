@@ -22,4 +22,9 @@ cp -r nerdtree ~/.vim/bundle/nerdtree
 # MiniBufExplorer
 cp -r minibufexplorer ~/.vim/bundle/minibufexplorer
 
+# molokai
+mkdir ~/.vim/colors/
+git clone git@github.com:tomasr/molokai.git molokai
+cp molokai/colors/molokai.vim  ~/.vim/colors/
+
 cp -f .vimrc ~/.vimrc
