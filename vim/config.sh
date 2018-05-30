@@ -1,4 +1,6 @@
 #!/bin/bash
+# author: zzq
+# warning: please backup old cfg!!!
 
 set -x
 
