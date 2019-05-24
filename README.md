@@ -12,9 +12,5 @@ cd config/vim
 ## nerdtree
 <C-n>打开目录树，o打开文件，<C-w>切换窗口
 
-# pycharm_settings.jar
-
-pycharm的配置，用于导入
-
 效果:  
 ![v](vim/shoot.jpg)  
