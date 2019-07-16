@@ -8,8 +8,10 @@ set -x
 lsb_release -a
 if [ $? -ne 0 ]; then
     yum install vim
+    yum install ctags
 else
     apt-get install vim
+    apt-get install ctags
 fi
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -28,5 +30,10 @@ cp -r minibufexplorer ~/.vim/bundle/minibufexplorer
 mkdir ~/.vim/colors/
 git clone git@github.com:tomasr/molokai.git molokai
 cp molokai/colors/molokai.vim  ~/.vim/colors/
+
+# taglist
+wget --no-check-certificate "http://www.vim.org/scripts/download_script.php?src_id=19574" -O taglist.zip && unzip taglist.zip -d taglist
+cp -r taglist ~/.vim/bundle/taglist
+
 
 cp -f .vimrc ~/.vimrc

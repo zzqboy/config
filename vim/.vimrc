@@ -51,6 +51,13 @@ colorscheme molokai
 set t_Co=256
 set background=dark
 
+" taglist
+let Tlist_Show_One_File = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_Sort_Type = "name"
+
+
 " you complete me
 let g:ycm_server_python_interpreter='/usr/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
