@@ -65,4 +65,4 @@ let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 set mouse=a
 
 " taglist
-map <C-T> :TlistToggle
+map <C-t> :TlistToggle<CR>
