@@ -15,7 +15,7 @@ cd config/vim
 `<C-n>`打开目录树，o打开文件，`<C-w>`切换窗口
 
 ## ctag
-在目录下执行ctags -R *， ctrl-] 跳转到定义处，ctrl-o返回
+在目录下执行`ctags -R *`， `ctrl-]` 跳转到定义处，`ctrl-o` 返回
 
 ## taglist
 输入`:TlistToggle`
