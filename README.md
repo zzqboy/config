@@ -18,7 +18,7 @@ cd config/vim
 在目录下执行`ctags -R *`， `ctrl-]` 跳转到定义处，`ctrl-o` 返回
 
 ## taglist
-输入`:TlistToggle`
+输入`:TlistToggle` or `ctrl-t`
 
 效果:  
 ![v](vim/shoot.jpg)  
