@@ -21,7 +21,7 @@ cd config/vim
 `:TlistToggle` or `ctrl-t`
 
 ## omnicppcomplete
-补全 <ctrl-x><ctrl-o>
+补全 `<ctrl-x><ctrl-o>`
 
 效果:  
 ![v](vim/shoot.jpg)  
