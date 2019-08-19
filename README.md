@@ -18,7 +18,10 @@ cd config/vim
 在目录下执行`ctags -R *`， `ctrl-]` 跳转到定义处，`ctrl-o` 返回
 
 ## taglist
-输入`:TlistToggle` or `ctrl-t`
+`:TlistToggle` or `ctrl-t`
+
+## omnicppcomplete
+补全 <ctrl-x><ctrl-o>
 
 效果:  
 ![v](vim/shoot.jpg)  

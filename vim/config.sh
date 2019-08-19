@@ -35,5 +35,14 @@ cp molokai/colors/molokai.vim  ~/.vim/colors/
 wget --no-check-certificate "http://www.vim.org/scripts/download_script.php?src_id=19574" -O taglist.zip && unzip taglist.zip -d taglist
 cp -r taglist ~/.vim/bundle/taglist
 
+#omnicppcomplete
+mkdir ~/.vim/tags
+mkdir ~/.vim/tags/cpp_src
+wget --no-check-certificate "http://www.vim.org/scripts/download_script.php?src_id=7722" -O omnicppcomplete.zip && unzip omnicppcomplete.zip -d ~/.vim
+wget --no-check-certificate "http://www.vim.org/scripts/download_script.php?src_id=9178" -O cpp_src.tar.bz2 && tar -xjvf cpp_src.tar.bz2
+mv cpp_src/* ~/.vim/tags/cpp_src
+cd ~/.vim/tags/cpp_src
+ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f tags
+cd -
 
 cp -f .vimrc ~/.vimrc
