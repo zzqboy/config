@@ -48,9 +48,6 @@ ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++
 cd -
 
 #ack
-wget http://beyondgrep.com/ack-2.12-single-file
-sudo mv ack-2.12-single-file /usr/bin/ack
-sudo chmod 0755 /usr/bin/ack
 git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
 
 cp -f .vimrc ~/.vimrc

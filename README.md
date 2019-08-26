@@ -1,6 +1,11 @@
 vim config， donot repeat yourself
 
 # 安装
+```
+wget http://beyondgrep.com/ack-2.12-single-file
+sudo mv ack-2.12-single-file /usr/bin/ack
+sudo chmod 0755 /usr/bin/ack
+```
 ```sh
 git clone git@github.com:zzqboy/config.git
 cd config/vim
