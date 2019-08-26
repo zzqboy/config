@@ -9,9 +9,11 @@ lsb_release -a
 if [ $? -ne 0 ]; then
     yum install vim
     yum install ctags
+    yum install unzip
 else
     apt-get install vim
     apt-get install ctags
+    apt-get install unzip
 fi
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -44,5 +46,11 @@ mv cpp_src/* ~/.vim/tags/cpp_src
 cd ~/.vim/tags/cpp_src
 ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f tags
 cd -
+
+#ack
+wget http://beyondgrep.com/ack-2.12-single-file
+sudo mv ack-2.12-single-file /usr/bin/ack
+sudo chmod 0755 /usr/bin/ack
+git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
 
 cp -f .vimrc ~/.vimrc
